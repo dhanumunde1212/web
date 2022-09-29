@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Responsive Portfolio Website | CodingLab </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <style>
+  
+      
+.showSlider {
+display: none
+}
+.showSlider img {
+width: 100%;
+}
+.container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+.left, .right {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+}
+.left{
+  left:0;
+}
+.right {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+.left:hover, .right:hover {
+background-color: rgba(115, 115, 115, 0.8);
+}
+.contentBook {
+color: #eff5d4;
+font-size: 30px;
+padding: 8px 12px;
+position: absolute;
+top: 10px;
+width: 100%;
+text-align: center;
+}
+.active {
+background-color: #717171;
+}
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+from {
+opacity: .4
+}
+to {
+opacity: 1
+}
+}
+@keyframes fade {
+from {
+opacity: .4
+}
+to {
+opacity: 1
+}
+}
+</style>
+     
+   </head>
+<body>
+  <!-- Move to up button -->
+  <div class="scroll-button">
+    <a href="test2.html"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  <!-- navgaition menu -->
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="#">Rubab</a></div>
+      <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="men.html">MEN</a></li>
+          <li><a href="women.html">WOMEN</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+      </ul>
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+</nav>
+ <!--test section-->
+ 
+<section class="services" id="services">
+    <div class="content">
+      <div class="title"><span>MEN SECTION</span></div>
+      <div class="boxes">
+        <div class="box">
+          
+        <div class="topic">
+          <table boordercolor="#aaa" cellspacing="0" cellpadding="0">
+            <tr>
+               <td><!--<img style="border-radius: 5px;" width="100%" height="100%" src="myimg1.jpg" >-->
+                <div class="slideshow-container">
+                  <div class="mySlides1">
+                    <img src="menimg/denisimg1.jpg" style="width: 100%">
+                  </div>
+                
+                  <div class="mySlides1">
+                    <img src="menimg/denisimg2.jpg" style="width:100%">
+                  </div>
+                
+                  <div class="mySlides1">
+                    <img src="menimg/denisimg3.jpg" style="width:100%">
+                  </div>
+                
+                  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                </div>
+               </td>
+            </tr>
+                </Table>
+        </div>
+        <p align="left"><b>Denis Lingo <br></b>
+          ID:2232 <br>
+          Color: Black <br>
+        Men Slim Fit Solid Slim Collar Casual Shirt <br>
+        Size: S, M, L, XL <br>
+      Price:550</p>
+        <div class="button">
+          <button><a href="https://wa.link/48znnx" type="button" class="cta" style="color: #0E2431" ><b>BUY NOW</b></a></button>
+        </div>
+      </div>
+        <div class="box">
+         
+        <div class="topic"> 
+          
+          <table boordercolor="#aaa" cellspacing="0" cellpadding="0">
+          <tr>
+              <td><!--<img width="100%" height="100%" src="myimg1.jpg" >-->
+                <div class="slideshow-container">
+                  <div class="mySlides2">
+                    <img src="menimg/denisimg4.jpg" style="width:100%">
+                  </div>
+                
+                  <div class="mySlides2">
+                    <img src="menimg/denisimg5.jpg" style="width:100%">
+                  </div>
+                
+                  <div class="mySlides2">
+                    <img src="menimg/denisimg6.jpg" style="width:100%">
+                  </div>
+                
+                  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                </div>
+              </td>
+                
+                
+                </div>
+                   
+            </td>
+          </tr>
+              </Table> 
+             </div>
+        
+        
+              <p align="left"><b>U Turn <br></b>
+                ID:2233 <br>
+                Color: Maroon <br>
+              Men Slim Fit Solid Slim Collar Casual Shirt <br>
+              Size: S, M, L, XL <br>
+            Price:570</p>
+          <div class="button">
+            <button><a href="https://wa.link/p4sr1v" type="button" class="cta" style="color: #0E2431" ><b>BUY NOW</b></a></button>
+          </div>
+      </div>
+        <div class="box">
+        <div class="topic">
+          <table boordercolor="#aaa" cellspacing="0" cellpadding="0">
+            <tr>
+                <td> <!--<img width="100%" height="100%" src="myimg1.jpg" >-->
+                  <div class="container">
+                    <div class="showSlider fade">
+                    <img src="myimg1.jpg" />
+                    
+                    </div>
+                    <div class="showSlider fade">
+                    <img src="myimg1.jpg" />
+                    
+                    </div>
+                    <div class="showSlider fade">
+                    <img src="myimg1.jpg"/>
+                    
+                    </div>
+                    <div class="showSlider fade">
+                    <img src="myimg1.jpg"/>
+                    
+                    </div>
+                    <!-- Navigation arrows -->
+                    <a class="left" onclick="nextSlide(-1)">❮</a>
+                    <a class="right" onclick="nextSlide(1)">❯</a>
+                    </div> 
+                 
+                  </td>
+               
+            </tr>
+                </Table>
+        </div>
+        <p align="left"><b>Denis Lingo <br></b>
+          ID:2234 <br>
+          Color: Dusty pink <br>
+        Men Slim Fit Solid Slim Collar Casual Shirt <br>
+        Size: S, M, L, XL <br>
+      Price:550</p>
+    <div class="button">
+      <button><a href="https://wa.link/3bamud" type="button" class="cta" style="color: #0E2431" ><b>BUY NOW</b></a></button>
+    </div>
+      </div>
+        <div class="box">
+        <div id="mainn" class="topic"><table>
+            <tr>
+                <td><img width="100%" height="100%" src="myimg1.jpg">
+                    
+                     
+                 
+               </td>
+            </tr>
+                </Table>
+        </div>
+  <p align="left"><b>Denis Lingo <br></b>
+          ID:2234 <br>
+          Color: Dusty pink <br>
+        Men Slim Fit Solid Slim Collar Casual Shirt <br>
+        Size: S, M, L, XL <br>
+      Price:550</p>
+    <div class="button">
+      <button><a href="https://wa.link/3bamud" type="button" class="cta" style="color: #0E2431" ><b>BUY NOW</b></a></button>
+    </div>
+      </div>
+        <div class="box">
+   
+        <div class="topic"><table boordercolor="#aaa" cellspacing="0" cellpadding="0">
+            <tr>
+                
+                
+              <img width="100%" height="100%" src="myimg1.jpg" >
+                
+               </td>
+            </tr>
+                </Table>
+        </div>
+ <p align="left"><b>Denis Lingo <br></b>
+          ID:2234 <br>
+          Color: Dusty pink <br>
+        Men Slim Fit Solid Slim Collar Casual Shirt <br>
+        Size: S, M, L, XL <br>
+      Price:550</p>
+    <div class="button">
+      <button><a href="https://wa.link/3bamud" type="button" class="cta" style="color: #0E2431" ><b>BUY NOW</b></a></button>
+    </div>
+      </div>
+        <div class="box">
+    
+        <div class="topic"><table boordercolor="#aaa" cellspacing="0" cellpadding="0">
+            <tr>
+                <td><img width="100%" height="100%" src="myimg1.jpg" >
+               </td>
+            </tr>
+                </Table>
+        </div>
+ <p align="left"><b>Denis Lingo <br></b>
+          ID:2234 <br>
+          Color: Dusty pink <br>
+        Men Slim Fit Solid Slim Collar Casual Shirt <br>
+        Size: S, M, L, XL <br>
+      Price:550</p>
+    <div class="button">
+      <button><a href="https://wa.link/3bamud" type="button" class="cta" style="color: #0E2431" ><b>BUY NOW</b></a></button>
+    </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+   
+  
+<!--test section-->
+<script>
+  $(function() {
+
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+
+});
+</script>
+<script>
+ var slide_index = 1;
+
+  slidesDisplay(slide_index);
+  function nextSlide(n) {
+  slidesDisplay(slide_index += n);
+  }
+  function currentSlide(n) {
+  slidesDisplay(slide_index = n);
+  }
+  function slidesDisplay(n) {
+  var i;
+  var slides = document.getElementsByClassName("showSlider");
+  if (n > slides.length) { slide_index = 1 }
+  if (n < 1) { slide_index = slides.length }
+  for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
+  }
+  slides[slide_index - 1].style.display = "block";
+  }
+  </script>
+  <footer>
+  <div class="text">
+    <span>Created By <a href="#">CodingLab</a> | &#169; 2021 All Rights Reserved</span>
+  </div>
+</footer>
+ <script src="script.js"></script>
+ 
+</body>
+</html>
+ 
